@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accredited Billing & Consulting (ABC Billing LLC) | Revenue Cycle Excellence</title>
+  
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              800: '#0f2744',
+              900: '#0a1d33',
+              950: '#05111e',
+            },
+            teal: {
+              450: '#0ea5a8',
+              550: '#0d898c',
+            },
+            brand: {
+              blue: '#0284c7',
+              teal: '#0d9488',
+              accent: '#38bdf8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .gradient-hero {
+      background: radial-gradient(circle at 85% 15%, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 10% 80%, rgba(13, 148, 136, 0.12) 0%, transparent 45%),
+                  linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    }
+    .hero-glow {
+      box-shadow: 0 20px 45px -15px rgba(2, 132, 199, 0.2);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-slate-700 bg-slate-50 selection:bg-teal-500 selection:text-white">
+
+  <header class="w-full sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all shadow-sm">
+    <!-- Top Contact Bar -->
+    <div class="bg-navy-900 text-slate-200 text-xs py-2 px-4 border-b border-navy-800">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex items-center flex-wrap gap-4 sm:gap-6">
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-phone text-teal-400 text-xs"></i>
+            <a href="tel:4093400192" class="hover:text-white transition">(409) 340-0192</a>
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-envelope text-teal-400 text-xs"></i>
+            <a href="mailto:info@abcbillingllc.com" class="hover:text-white transition">info@abcbillingllc.com</a>
+          </span>
+          <span class="hidden md:flex items-center gap-1.5 text-slate-400">
+            <i class="fa-solid fa-shield-halved text-teal-400"></i> 100% HIPAA Compliant
+          </span>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-medium bg-teal-500/20 text-teal-300 border border-teal-500/30">
+            <span class="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse mr-1.5"></span>
+            98%+ First Pass Clean Claims
+          </span>
+          <button onclick="openModal('Audit Consultation')" class="text-teal-300 hover:text-white font-medium hover:underline text-xs">
+            Free Billing Audit &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-navy-900 via-teal-600 to-sky-500 flex items-center justify-center text-white shadow-md shadow-teal-500/20 group-hover:scale-105 transition-transform duration-300">
+            <i class="fa-solid fa-file-invoice-dollar text-2xl"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-extrabold text-xl sm:text-2xl text-navy-900 tracking-tight">ABC<span class="text-teal-600">Billing</span></span>
+              <span class="text-xs uppercase tracking-wider font-semibold text-sky-600 bg-sky-50 px-1.5 py-0.5 rounded">LLC</span>
+            </div>
+            <p class="text-[11px] text-slate-500 tracking-wide font-medium">Accredited Billing & Consulting</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+          <a href="#services" class="hover:text-teal-600 transition">Services</a>
+          <a href="#specialties" class="hover:text-teal-600 transition">Specialties</a>
+          <a href="#calculator" class="hover:text-teal-600 transition">ROI Calculator</a>
+          <a href="#process" class="hover:text-teal-600 transition">RCM Process</a>
+          <a href="#ehr" class="hover:text-teal-600 transition">EHR Systems</a>
+          <a href="#testimonials" class="hover:text-teal-600 transition">Testimonials</a>
+          <a href="#faq" class="hover:text-teal-600 transition">FAQ</a>
+        </nav>
+
+        <!-- CTA Action Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:4093400192" class="p-2.5 rounded-lg border border-slate-200 text-slate-700 hover:border-teal-500 hover:text-teal-600 transition">
+            <i class="fa-solid fa-phone-volume"></i>
+          </a>
+          <button onclick="openModal('Schedule Consultation')" class="relative inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-teal-600 to-sky-600 rounded-lg shadow hover:from-teal-700 hover:to-sky-700 transition-all hover:shadow-lg hover:shadow-teal-500/25 active:scale-95">
+            <span>Book an Appointment</span>
+            <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="flex items-center lg:hidden">
+          <button id="mobile-menu-btn" type="button" class="p-2 rounded-lg text-slate-600 hover:text-navy-900 hover:bg-slate-100 transition" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 shadow-xl space-y-3">
+      <a href="#services" onclick="toggleMenu()" class="block py-2 text-base font-medium text-slate-700 hover:text-teal-600 border-b border-slate-100">Services</a>
+      <a href="#specialties" onclick="toggleMenu()" class="block py-2 text-base font-medium text-slate-700 hover:text-teal-600 border-b border-slate-100">Medical Specialties</a>
+      <a href="#calculator" onclick="toggleMenu()" class="block py-2 text-base font-medium text-slate-700 hover:text-teal-600 border-b border-slate-100">ROI Calculator</a>
+      <a href="#process" onclick="toggleMenu()" class="block py-2 text-base font-medium text-slate-700 hover:text-teal-600 border-b border-slate-100">RCM Process</a>
+      <a href="#ehr" onclick="toggleMenu()" class="block py-2 text-base font-medium text-slate-700 hover:text-teal-600 border-b border-slate-100">EHR Integration</a>
+      <a href="#testimonials" onclick="toggleMenu()" class="block py-2 text-base font-medium text-slate-700 hover:text-teal-600 border-b border-slate-100">Reviews</a>
+      <a href="#faq" onclick="toggleMenu()" class="block py-2 text-base font-medium text-slate-700 hover:text-teal-600">FAQ</a>
+      <div class="pt-3">
+        <button onclick="toggleMenu(); openModal('Mobile Consultation Booking');" class="w-full py-3 text-center text-white font-semibold rounded-lg bg-teal-600 hover:bg-teal-700">
+          Book an Appointment
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="relative overflow-hidden gradient-hero pt-12 pb-20 lg:pt-18 lg:pb-28 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Hero Copy -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-semibold uppercase tracking-wider">
+              <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
+              </span>
+              Revenue Cycle Excellence in Healthcare
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-navy-900 tracking-tight leading-[1.15]">
+              Streamline Healthcare Billing. <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-600 via-sky-600 to-indigo-700">Maximize Practice Profitability.</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-body">
+              Welcome to <span class="font-semibold text-slate-900">Accredited Billing and Consulting (ABC Billing LLC)</span>. We eliminate administrative friction through accurate, HIPAA-compliant billing, medical coding, proactive denial prevention, and credentialing.
+            </p>
+
+            <!-- Quick Metrics Badges -->
+            <div class="grid grid-cols-3 gap-3 sm:gap-6 pt-2 pb-2 max-w-xl mx-auto lg:mx-0">
+              <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm text-center">
+                <div class="text-xl sm:text-2xl font-extrabold text-teal-600">98.5%</div>
+                <div class="text-[11px] sm:text-xs text-slate-500 font-medium">Clean Claim Rate</div>
+              </div>
+              <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm text-center">
+                <div class="text-xl sm:text-2xl font-extrabold text-sky-600">&lt;25 Days</div>
+                <div class="text-[11px] sm:text-xs text-slate-500 font-medium">Average A/R Turnaround</div>
+              </div>
+              <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm text-center">
+                <div class="text-xl sm:text-2xl font-extrabold text-indigo-600">15-25%</div>
+                <div class="text-[11px] sm:text-xs text-slate-500 font-medium">Revenue Increase</div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <button onclick="openModal('Hero Free Audit')" class="w-full sm:w-auto px-7 py-3.5 bg-navy-900 text-white font-semibold rounded-xl hover:bg-slate-800 transition shadow-lg shadow-navy-900/15 flex items-center justify-center gap-2">
+                <span>Request Free Practice Audit</span>
+                <i class="fa-solid fa-chart-line text-sm text-teal-400"></i>
+              </button>
+              <a href="#calculator" class="w-full sm:w-auto px-7 py-3.5 bg-white text-slate-700 font-semibold rounded-xl border border-slate-200 hover:border-teal-500 hover:text-teal-600 transition shadow-sm flex items-center justify-center gap-2">
+                <span>Calculate Your ROI</span>
+                <i class="fa-solid fa-calculator text-sm text-slate-400"></i>
+              </a>
+            </div>
+
+            <div class="pt-2 flex items-center justify-center lg:justify-start gap-6 text-xs text-slate-500 font-medium">
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-teal-600"></i> No Long-term Lock-in</span>
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-teal-600"></i> Works with Any EHR</span>
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-teal-600"></i> AAPC / AHIMA Certified</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <div class="absolute -top-6 -left-6 w-72 h-72 bg-teal-300/20 rounded-full blur-3xl -z-10"></div>
+              <div class="absolute -bottom-8 -right-8 w-72 h-72 bg-sky-300/20 rounded-full blur-3xl -z-10"></div>
+
+              <div class="bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden">
+                <!-- Header of Card -->
+                <div class="bg-navy-900 text-white p-5 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-teal-500/20 flex items-center justify-center text-teal-400">
+                      <i class="fa-solid fa-laptop-medical text-lg"></i>
+                    </div>
+                    <div>
+                      <h2 class="text-sm font-bold">Practice Performance Snapshot</h2>
+                      <p class="text-xs text-slate-400">Live RCM Health Metrics</p>
+                    </div>
+                  </div>
+                  <span class="px-2 py-1 text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 rounded border border-emerald-500/30">
+                    Active Audit
+                  </span>
+                </div>
+
+                <div class="p-6 space-y-4">
+                  <!-- Metric Row 1 -->
+                  <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                    <div class="flex items-center gap-3">
+                      <div class="w-8 h-8 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-xs">
+                        <i class="fa-solid fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <div class="text-sm font-semibold text-slate-800">Clean Claim Acceptance</div>
+                        <div class="text-xs text-slate-500">First-pass clearinghouse submission</div>
+                      </div>
+                    </div>
+                    <span class="text-sm font-bold text-emerald-600">98.5%</span>
+                  </div>
+
+                  <!-- Metric Row 2 -->
+                  <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                    <div class="flex items-center gap-3">
+                      <div class="w-8 h-8 rounded-full bg-sky-50 text-sky-600 flex items-center justify-center text-xs">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                      </div>
+                      <div>
+                        <div class="text-sm font-semibold text-slate-800">Days in Accounts Receivable</div>
+                        <div class="text-xs text-slate-500">Industry benchmark: 45+ days</div>
+                      </div>
+                    </div>
+                    <span class="text-sm font-bold text-sky-600">22.4 Days</span>
+                  </div>
+
+                  <!-- Metric Row 3 -->
+                  <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                    <div class="flex items-center gap-3">
+                      <div class="w-8 h-8 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-xs">
+                        <i class="fa-solid fa-shield-virus"></i>
+                      </div>
+                      <div>
+                        <div class="text-sm font-semibold text-slate-800">Denial Management Resolution</div>
+                        <div class="text-xs text-slate-500">Rapid rework & targeted appeals</div>
+                      </div>
+                    </div>
+                    <span class="text-sm font-bold text-amber-600">94.2%</span>
+                  </div>
+
+                  <!-- Interactive quick teaser -->
+                  <div class="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <div class="flex items-center justify-between mb-2">
+                      <span class="text-xs font-semibold text-slate-700">Practice Revenue Recovery Potential</span>
+                      <span class="text-xs font-bold text-teal-600">+$64,500 / yr</span>
+                    </div>
+                    <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+                      <div class="bg-gradient-to-r from-teal-500 to-sky-500 h-full rounded-full" style="width: 82%;"></div>
+                    </div>
+                    <p class="text-[11px] text-slate-500 mt-2">
+                      Based on typical independent practices switching from in-house to Accredited Billing & Consulting.
+                    </p>
+                  </div>
+
+                  <button onclick="openModal('Get Audit Details')" class="w-full py-2.5 bg-teal-50 text-teal-700 font-semibold rounded-lg hover:bg-teal-100 border border-teal-200 transition text-xs flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i> Get Free Practice Analysis
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-6">
+          Compatible with Major Clearinghouses, Payers & EHR Platforms
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-14 opacity-75 grayscale hover:grayscale-0 transition-all duration-300">
+          <div class="flex items-center gap-2 text-slate-700 font-bold text-base"><i class="fa-solid fa-hospital text-teal-600"></i> AthenaHealth</div>
+          <div class="flex items-center gap-2 text-slate-700 font-bold text-base"><i class="fa-solid fa-notes-medical text-sky-600"></i> Epic Systems</div>
+          <div class="flex items-center gap-2 text-slate-700 font-bold text-base"><i class="fa-solid fa-heart-pulse text-indigo-600"></i> eClinicalWorks</div>
+          <div class="flex items-center gap-2 text-slate-700 font-bold text-base"><i class="fa-solid fa-folder-tree text-teal-600"></i> Kareo</div>
+          <div class="flex items-center gap-2 text-slate-700 font-bold text-base"><i class="fa-solid fa-briefcase-medical text-slate-800"></i> AdvancedMD</div>
+          <div class="flex items-center gap-2 text-slate-700 font-bold text-base"><i class="fa-solid fa-cloud-arrow-up text-blue-600"></i> Availity / Change</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-teal-600 font-bold text-xs uppercase tracking-widest bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+            Comprehensive Healthcare Solutions
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight mt-3">
+            End-to-End Revenue Cycle Management
+          </h2>
+          <p class="text-slate-600 mt-4 text-base font-body">
+            Accredited Billing & Consulting delivers tailored billing, medical coding, and provider administrative support so your medical staff can devote 100% focus to patient health.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Service Card 1 -->
+          <div class="bg-white rounded-2xl p-7 border border-slate-200 hover:border-teal-500 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-600 group-hover:text-white transition duration-300">
+                <i class="fa-solid fa-receipt"></i>
+              </div>
+              <h3 class="text-xl font-bold text-navy-900 mb-3 group-hover:text-teal-600 transition">Medical Billing & Coding</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                Certified AAPC/AHIMA coders ensure exact ICD-10, CPT, and HCPCS coding, rapid electronic charge entry, and aggressive clean claim submissions.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Charge entry within 24-48 hours</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> LCD/NCD national coverage check</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Commercial & Government payer billing</li>
+              </ul>
+            </div>
+            <button onclick="openModal('Medical Billing & Coding')" class="text-teal-600 font-semibold text-xs inline-flex items-center gap-1 group-hover:translate-x-1 transition">
+              Explore Billing Details <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="bg-white rounded-2xl p-7 border border-slate-200 hover:border-teal-500 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-sky-600 group-hover:text-white transition duration-300">
+                <i class="fa-solid fa-ban"></i>
+              </div>
+              <h3 class="text-xl font-bold text-navy-900 mb-3 group-hover:text-sky-600 transition">Denial Management & Prevention</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                We trace every rejected and denied claim back to its root cause, submit targeted appeals, and implement front-desk preventive measures to reduce recurrence.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> Fast 72-hour appeal turnaround</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> Root-cause analysis reports</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> Over 90% recovered revenue on appeals</li>
+              </ul>
+            </div>
+            <button onclick="openModal('Denial Management')" class="text-sky-600 font-semibold text-xs inline-flex items-center gap-1 group-hover:translate-x-1 transition">
+              Prevent Denials <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="bg-white rounded-2xl p-7 border border-slate-200 hover:border-teal-500 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition duration-300">
+                <i class="fa-solid fa-id-card-clip"></i>
+              </div>
+              <h3 class="text-xl font-bold text-navy-900 mb-3 group-hover:text-indigo-600 transition">Credentialing & Contracting</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                End-to-end provider enrollment, CAQH management, NPI registrations, and aggressive payer contract negotiation to lock in favorable fee schedules.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-500"></i> CAQH profile setup and quarterly maintenance</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-500"></i> Primary source verification & re-credentialing</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-500"></i> Payer fee schedule renegotiation</li>
+              </ul>
+            </div>
+            <button onclick="openModal('Credentialing Services')" class="text-indigo-600 font-semibold text-xs inline-flex items-center gap-1 group-hover:translate-x-1 transition">
+              Get Credentialed <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="bg-white rounded-2xl p-7 border border-slate-200 hover:border-teal-500 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition duration-300">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3 class="text-xl font-bold text-navy-900 mb-3 group-hover:text-emerald-600 transition">Pre-Authorization & Verification</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                Avoid surprise non-covered care. We verify patient eligibility, deductibles, co-pays, and secure prior authorizations before patients step foot into your exam room.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Real-time benefit verification</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Dedicated pre-auth documentation</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Reduced front-desk friction</li>
+              </ul>
+            </div>
+            <button onclick="openModal('Pre-Authorization')" class="text-emerald-600 font-semibold text-xs inline-flex items-center gap-1 group-hover:translate-x-1 transition">
+              Verify Benefits <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div class="bg-white rounded-2xl p-7 border border-slate-200 hover:border-teal-500 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-600 group-hover:text-white transition duration-300">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <h3 class="text-xl font-bold text-navy-900 mb-3 group-hover:text-amber-600 transition">Practice Performance Analytics</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                Transparent monthly financial reporting on practice health, collection rates, payer lag times, and provider productivity metrics.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Custom monthly financial dashboard</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> A/R aging bucket analysis</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Direct consultation with leadership</li>
+              </ul>
+            </div>
+            <button onclick="openModal('Performance Analytics')" class="text-amber-600 font-semibold text-xs inline-flex items-center gap-1 group-hover:translate-x-1 transition">
+              View Analytics Demo <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div class="bg-white rounded-2xl p-7 border border-slate-200 hover:border-teal-500 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <h3 class="text-xl font-bold text-navy-900 mb-3 group-hover:text-purple-600 transition">Patient Billing & Virtual Support</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                Compassionate, patient-friendly billing statements, bilingual call center inquiry handling, appointment confirmation, and seamless payment plans.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-500"></i> Friendly patient phone support</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-500"></i> Digital statement generation</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-500"></i> Automated appointment reminder calls</li>
+              </ul>
+            </div>
+            <button onclick="openModal('Patient Billing & Support')" class="text-purple-600 font-semibold text-xs inline-flex items-center gap-1 group-hover:translate-x-1 transition">
+              Learn Patient Support <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="calculator" class="py-20 bg-white border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-navy-900 via-navy-800 to-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl overflow-hidden relative">
+          
+          <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="max-w-3xl mb-10">
+            <span class="text-teal-400 font-bold text-xs uppercase tracking-widest bg-teal-400/10 px-3 py-1 rounded-full border border-teal-400/20">
+              Interactive Financial Estimator
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mt-3">
+              Calculate Your Practice's Revenue Recovery
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base mt-2 font-body">
+              Adjust the sliders below to see how Accredited Billing & Consulting can reclaim lost reimbursements and shorten payment turnaround for your practice.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Controls Form -->
+            <div class="lg:col-span-7 space-y-6">
+              <!-- Slider 1 -->
+              <div class="space-y-2">
+                <div class="flex justify-between items-center text-sm font-semibold">
+                  <span>Current Monthly Billing Volume:</span>
+                  <span id="volume-display" class="text-teal-400 font-bold text-base">$80,000</span>
+                </div>
+                <input id="volume-slider" type="range" min="20000" max="500000" step="5000" value="80000" 
+                  class="w-full h-2.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-teal-400">
+                <div class="flex justify-between text-[11px] text-slate-400">
+                  <span>$20k / mo</span>
+                  <span>$250k / mo</span>
+                  <span>$500k+ / mo</span>
+                </div>
+              </div>
+
+              <!-- Slider 2 -->
+              <div class="space-y-2">
+                <div class="flex justify-between items-center text-sm font-semibold">
+                  <span>Current Denial / Rejection Rate:</span>
+                  <span id="denial-display" class="text-sky-400 font-bold text-base">12%</span>
+                </div>
+                <input id="denial-slider" type="range" min="3" max="25" step="1" value="12" 
+                  class="w-full h-2.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-400">
+                <div class="flex justify-between text-[11px] text-slate-400">
+                  <span>3% (Low)</span>
+                  <span>12% (Average US)</span>
+                  <span>25% (High)</span>
+                </div>
+              </div>
+
+              <!-- Specialty Selector -->
+              <div class="space-y-2">
+                <label for="practice-type" class="text-sm font-semibold block">Practice Specialty / Size:</label>
+                <select id="practice-type" class="w-full px-4 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 text-sm focus:outline-none focus:border-teal-400">
+                  <option value="solo">Solo Physician Practice (1 Provider)</option>
+                  <option value="group" selected>Small-Medium Medical Group (2-6 Providers)</option>
+                  <option value="surgical">Specialty Clinic / Surgery Center (ASC)</option>
+                  <option value="urgent">Urgent Care / Multi-specialty Facility</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5">
+              <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 space-y-5">
+                <div class="text-xs uppercase font-bold tracking-wider text-slate-300">
+                  Estimated Practice Gains (Annual)
+                </div>
+
+                <div>
+                  <div class="text-xs text-slate-300">Net Additional Recovered Collections:</div>
+                  <div id="annual-recovery" class="text-3xl sm:text-4xl font-extrabold text-teal-300 mt-1">
+                    $72,960 / yr
+                  </div>
+                  <p class="text-[11px] text-slate-400 mt-1">Via clean coding, immediate claim rework, and reduced denials to &lt;2%.</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 pt-3 border-t border-white/10">
+                  <div class="bg-navy-950/40 p-3 rounded-xl border border-white/5">
+                    <span class="text-[11px] text-slate-400 block">A/R Days Reduced</span>
+                    <span class="text-lg font-bold text-white">~18-24 Days</span>
+                  </div>
+                  <div class="bg-navy-950/40 p-3 rounded-xl border border-white/5">
+                    <span class="text-[11px] text-slate-400 block">Admin Hours Saved</span>
+                    <span class="text-lg font-bold text-white">35+ hrs / wk</span>
+                  </div>
+                </div>
+
+                <button onclick="openModal('ROI Calculator Lead')" class="w-full py-3 bg-gradient-to-r from-teal-500 to-sky-500 hover:from-teal-600 hover:to-sky-600 text-white font-bold rounded-xl shadow-lg transition text-sm flex items-center justify-center gap-2">
+                  <span>Lock In These Results</span>
+                  <i class="fa-solid fa-arrow-trend-up"></i>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="specialties" class="py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-sky-600 font-bold text-xs uppercase tracking-widest bg-sky-50 px-3 py-1 rounded-full border border-sky-200">
+            Specialized Medical Knowledge
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight mt-3">
+            Specialty-Specific Medical Billing Expertise
+          </h2>
+          <p class="text-slate-600 mt-3 text-base">
+            Every clinical specialty has unique modifier guidelines, billing nuances, and carrier restrictions. Our dedicated billing teams specialize in:
+          </p>
+        </div>
+
+        <!-- Specialty Grid with interactive detail toggles -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+          
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition cursor-pointer group" onclick="openSpecialtyInfo('Cardiology', 'Pre-authorization for catheterization, ECHO coding, pacemaker interrogations, and Medicare LCD documentation.')">
+            <div class="w-10 h-10 rounded-lg bg-rose-50 text-rose-500 flex items-center justify-center text-xl mb-3 group-hover:bg-rose-500 group-hover:text-white transition">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm group-hover:text-teal-600 transition">Cardiology</h4>
+            <p class="text-xs text-slate-500 mt-1">ECHO, Nuclear, Cath Lab & Telemetry</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition cursor-pointer group" onclick="openSpecialtyInfo('Pain Management', 'Interventional spine injections, fluoroscopy modifier 26, toxicology coding, and strict payer pre-authorizations.')">
+            <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-500 flex items-center justify-center text-xl mb-3 group-hover:bg-amber-500 group-hover:text-white transition">
+              <i class="fa-solid fa-syringe"></i>
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm group-hover:text-teal-600 transition">Pain Management</h4>
+            <p class="text-xs text-slate-500 mt-1">Epidural, Injections & Neuromodulation</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition cursor-pointer group" onclick="openSpecialtyInfo('Orthopedics', 'Surgical bundling, fracture care global periods, durable medical equipment (DME), and physical therapy compliance.')">
+            <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-500 flex items-center justify-center text-xl mb-3 group-hover:bg-blue-500 group-hover:text-white transition">
+              <i class="fa-solid fa-bone"></i>
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm group-hover:text-teal-600 transition">Orthopedics</h4>
+            <p class="text-xs text-slate-500 mt-1">Joint Replacement, Trauma & DME</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition cursor-pointer group" onclick="openSpecialtyInfo('Ambulatory Surgery (ASC)', 'Facility fee billing, device carve-outs, surgical implants, and multiple procedure discounting rules.')">
+            <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-500 flex items-center justify-center text-xl mb-3 group-hover:bg-teal-500 group-hover:text-white transition">
+              <i class="fa-solid fa-hospital-user"></i>
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm group-hover:text-teal-600 transition">Ambulatory Surgery</h4>
+            <p class="text-xs text-slate-500 mt-1">ASC Facility Fees & Implant Carve-outs</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition cursor-pointer group" onclick="openSpecialtyInfo('Oncology', 'Chemotherapy drug administration codes, J-codes reimbursement, biosimilar cross-referencing, and rapid authorizations.')">
+            <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-500 flex items-center justify-center text-xl mb-3 group-hover:bg-purple-500 group-hover:text-white transition">
+              <i class="fa-solid fa-ribbon"></i>
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm group-hover:text-teal-600 transition">Oncology</h4>
+            <p class="text-xs text-slate-500 mt-1">Infusion, J-Codes & Specialty Drugs</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition cursor-pointer group" onclick="openSpecialtyInfo('Psychiatry & Behavioral Health', 'Telehealth modifiers (95/GT), psychotherapy time-based add-ons, TMS coding, and commercial parity guidelines.')">
+            <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-500 flex items-center justify-center text-xl mb-3 group-hover:bg-emerald-500 group-hover:text-white transition">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm group-hover:text-teal-600 transition">Psychiatry</h4>
+            <p class="text-xs text-slate-500 mt-1">Mental Health, Psychotherapy & Telehealth</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition cursor-pointer group" onclick="openSpecialtyInfo('Dermatology', 'Mohs micrographic surgery, benign vs malignant lesion destruction, bi-lateral modifier 50, and cosmetic vs medical.')">
+            <div class="w-10 h-10 rounded-lg bg-orange-50 text-orange-500 flex items-center justify-center text-xl mb-3 group-hover:bg-orange-500 group-hover:text-white transition">
+              <i class="fa-solid fa-hand-dots"></i>
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm group-hover:text-teal-600 transition">Dermatology</h4>
+            <p class="text-xs text-slate-500 mt-1">Mohs Surgery, Biopsies & Excision</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition cursor-pointer group" onclick="openSpecialtyInfo('Internal Medicine', 'Chronic care management (CCM), annual wellness visits (AWV), transition of care, and complex multi-morbid E/M coding.')">
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-500 flex items-center justify-center text-xl mb-3 group-hover:bg-indigo-500 group-hover:text-white transition">
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm group-hover:text-teal-600 transition">Internal Medicine</h4>
+            <p class="text-xs text-slate-500 mt-1">Primary Care, CCM, RPM & AWV</p>
+          </div>
+
+        </div>
+
+        <!-- Additional specialties pill bar -->
+        <div class="mt-8 p-4 rounded-2xl bg-white border border-slate-200 flex flex-wrap items-center justify-center gap-3 text-xs text-slate-600">
+          <span class="font-semibold text-slate-900">Also Serving:</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-full font-medium">Anesthesiology</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-full font-medium">General Surgery</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-full font-medium">Allergy & Immunology</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-full font-medium">Ophthalmology</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-full font-medium">Pediatrics</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-full font-medium">Radiology</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-full font-medium">Podiatry</span>
+          <button onclick="openModal('Specialty Inquiry')" class="text-teal-600 font-bold hover:underline">
+            Don't see your specialty? Ask us &rarr;
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="process" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-teal-600 font-bold text-xs uppercase tracking-widest bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+            Proven 5-Stage Blueprint
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight mt-3">
+            How We Optimize Your Revenue Cycle
+          </h2>
+          <p class="text-slate-600 mt-3 text-base">
+            From patient check-in to zero-balance reconciliation, Accredited Billing & Consulting automates and audits every link in the financial chain.
+          </p>
+        </div>
+
+        <div class="relative">
+          <!-- Step Process Line -->
+          <div class="hidden lg:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-teal-500 via-sky-500 to-indigo-600 -translate-y-1/2 z-0"></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 relative z-10">
+            
+            <!-- Step 1 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center flex flex-col items-center hover:-translate-y-1 transition duration-300">
+              <div class="w-12 h-12 rounded-full bg-teal-500 text-white font-bold flex items-center justify-center text-lg mb-4 shadow-md shadow-teal-500/30">
+                1
+              </div>
+              <h4 class="font-bold text-navy-900 text-sm mb-2">Pre-Encounter & Intake</h4>
+              <p class="text-xs text-slate-500">
+                Real-time insurance eligibility checks, co-pay identification, and required pre-authorizations.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center flex flex-col items-center hover:-translate-y-1 transition duration-300">
+              <div class="w-12 h-12 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-lg mb-4 shadow-md shadow-teal-600/30">
+                2
+              </div>
+              <h4 class="font-bold text-navy-900 text-sm mb-2">Charge Entry & Coding</h4>
+              <p class="text-xs text-slate-500">
+                AAPC-certified coding review, CPT modifier audit, and NCCI edit checks within 24 hours.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center flex flex-col items-center hover:-translate-y-1 transition duration-300">
+              <div class="w-12 h-12 rounded-full bg-sky-500 text-white font-bold flex items-center justify-center text-lg mb-4 shadow-md shadow-sky-500/30">
+                3
+              </div>
+              <h4 class="font-bold text-navy-900 text-sm mb-2">Clearinghouse Scrubbing</h4>
+              <p class="text-xs text-slate-500">
+                Automated claim scrubbing against payer-specific rules with 98.5% first-pass clean acceptance.
+              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center flex flex-col items-center hover:-translate-y-1 transition duration-300">
+              <div class="w-12 h-12 rounded-full bg-sky-600 text-white font-bold flex items-center justify-center text-lg mb-4 shadow-md shadow-sky-600/30">
+                4
+              </div>
+              <h4 class="font-bold text-navy-900 text-sm mb-2">Denials & Appeals</h4>
+              <p class="text-xs text-slate-500">
+                Immediate denial categorization, appeal generation with medical documentation, and persistent follow-up.
+              </p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center flex flex-col items-center hover:-translate-y-1 transition duration-300">
+              <div class="w-12 h-12 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center text-lg mb-4 shadow-md shadow-indigo-600/30">
+                5
+              </div>
+              <h4 class="font-bold text-navy-900 text-sm mb-2">Posting & Analytics</h4>
+              <p class="text-xs text-slate-500">
+                ERA/EOB payment posting, patient balance collection, and transparent monthly performance reporting.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="ehr" class="py-16 bg-navy-900 text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-8 space-y-4">
+            <span class="text-teal-400 font-semibold text-xs tracking-wider uppercase bg-teal-400/10 px-3 py-1 rounded-full border border-teal-400/20">
+              Zero Disruption Guarantee
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight">
+              We Work Inside Your Existing EHR / EMR
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              No expensive migration, no workflow disruption. Our experienced billing specialists seamlessly log into your existing software (AthenaHealth, Epic, Kareo, eClinicalWorks, AdvancedMD, NextGen, Practice Fusion, and more) to work claims directly.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2 text-xs text-teal-300">
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-lock"></i> Encrypted VPN Access</span>
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-user-shield"></i> Role-Based Access Controls</span>
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-clock"></i> Onboarding in under 5 business days</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 flex justify-center lg:justify-end">
+            <button onclick="openModal('EHR Integration Check')" class="px-6 py-4 bg-teal-500 hover:bg-teal-400 text-navy-950 font-bold rounded-xl shadow-lg transition-transform active:scale-95 text-sm flex items-center gap-3">
+              <i class="fa-solid fa-plug text-lg"></i>
+              <span>Verify Your EHR Compatibility</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-20 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-teal-600 font-bold text-xs uppercase tracking-widest bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+            Real Practice Outcomes
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight mt-3">
+            What Healthcare Professionals Say
+          </h2>
+          <p class="text-slate-600 mt-3 text-base">
+            Physicians and practice managers across Texas and nationwide trust ABC Billing LLC to keep their revenue predictable and stress-free.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex text-amber-400 text-sm gap-1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed italic">
+                "Accredited Billing's denial management saved our practice thousands. Their transparent reporting and dedicated support are invaluable for our financial success. We saw our collection time drop by nearly three weeks."
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center font-bold text-sm">
+                SM
+              </div>
+              <div>
+                <div class="font-bold text-slate-800 text-sm">Dr. Sarah Mitchell, MD</div>
+                <div class="text-xs text-slate-500">Family Medicine Practice</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex text-amber-400 text-sm gap-1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed italic">
+                "Their billing solutions streamlined our entire revenue cycle. We now experience faster reimbursements and remarkably better cash flow. Whenever we have a question, our assigned account manager responds immediately."
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-sm">
+                JC
+              </div>
+              <div>
+                <div class="font-bold text-slate-800 text-sm">Dr. James Carter, DO</div>
+                <div class="text-xs text-slate-500">Internal Medicine & Geriatrics</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex text-amber-400 text-sm gap-1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed italic">
+                "Credentialing new providers used to take us 6+ months of headache. ABC Billing managed CAQH and payer enrollments smoothly and negotiated higher reimbursement rates for our surgical group."
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-sm">
+                RH
+              </div>
+              <div>
+                <div class="font-bold text-slate-800 text-sm">Rachel Hayes, MHA</div>
+                <div class="text-xs text-slate-500">Surgical Clinic Administrator</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12">
+          <span class="text-teal-600 font-bold text-xs uppercase tracking-widest bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+            Got Questions?
+          </span>
+          <h2 class="text-3xl font-extrabold text-navy-900 tracking-tight mt-3">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-slate-600 text-sm mt-2">
+            Everything you need to know about partnering with Accredited Billing & Consulting.
+          </p>
+        </div>
+
+        <div class="space-y-4" id="faq-container">
+          
+          <!-- FAQ Item 1 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden transition">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-navy-900 flex justify-between items-center bg-slate-50/50 hover:bg-slate-50">
+              <span class="text-sm sm:text-base">Do I consistently work directly with dedicated management?</span>
+              <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300"></i>
+            </button>
+            <div class="p-5 text-sm text-slate-600 bg-white border-t border-slate-100">
+              Yes. At Accredited Billing & Consulting, we prioritize personalized service and open communication. You receive a dedicated account manager and consistent direct access to our senior billing managers, avoiding anonymous call queues.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden transition">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-navy-900 flex justify-between items-center bg-slate-50/50 hover:bg-slate-50">
+              <span class="text-sm sm:text-base">What are the primary benefits of outsourcing billing to ABC Billing?</span>
+              <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300"></i>
+            </button>
+            <div class="p-5 text-sm text-slate-600 bg-white border-t border-slate-100 hidden">
+              By outsourcing to our certified billing specialists, practices typically see an immediate 15%–25% increase in collected revenue, reduced claim denials below 2%, average days in A/R under 25 days, and elimination of in-house billing staff overhead and turnover costs.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden transition">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-navy-900 flex justify-between items-center bg-slate-50/50 hover:bg-slate-50">
+              <span class="text-sm sm:text-base">Do you stay in full compliance with HIPAA and billing regulations?</span>
+              <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300"></i>
+            </button>
+            <div class="p-5 text-sm text-slate-600 bg-white border-t border-slate-100 hidden">
+              Patient data security is our top priority. We sign comprehensive Business Associate Agreements (BAAs), employ 256-bit SSL encrypted channels, comply strictly with HIPAA and HITECH security rules, and conduct frequent compliance audits on all coding.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden transition">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-navy-900 flex justify-between items-center bg-slate-50/50 hover:bg-slate-50">
+              <span class="text-sm sm:text-base">How fast can our medical practice get started?</span>
+              <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300"></i>
+            </button>
+            <div class="p-5 text-sm text-slate-600 bg-white border-t border-slate-100 hidden">
+              Most practices are fully onboarded and live within 5 to 7 business days. We connect to your current EHR/EMR, review your clearinghouse routing, and conduct an initial billing audit so there is zero disruption to your daily patient visits.
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden transition">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-navy-900 flex justify-between items-center bg-slate-50/50 hover:bg-slate-50">
+              <span class="text-sm sm:text-base">How are your fees structured?</span>
+              <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300"></i>
+            </button>
+            <div class="p-5 text-sm text-slate-600 bg-white border-t border-slate-100 hidden">
+              We align our incentives directly with yours. Our fee is typically based on a competitive percentage of actual collections received—meaning we only get paid when you get paid. Credentialing and custom consulting options are also available.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-100 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Info -->
+          <div class="lg:col-span-5 space-y-6">
+            <span class="text-teal-600 font-bold text-xs uppercase tracking-widest bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+              Get in Touch
+            </span>
+            <h2 class="text-3xl font-extrabold text-navy-900 tracking-tight">
+              Ready to Maximize Revenue & Eliminate Complexities?
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed font-body">
+              Schedule your complimentary, zero-obligation practice billing assessment. We'll analyze your current collections, identify leakage, and deliver a clear plan of action.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-teal-600 shrink-0">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-500 font-semibold">Direct Telephone</div>
+                  <a href="tel:4093400192" class="text-base font-bold text-navy-900 hover:text-teal-600 transition">(409) 340-0192</a>
+                  <p class="text-xs text-slate-400">Mon-Fri: 8:00 AM - 6:00 PM CST</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-teal-600 shrink-0">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-500 font-semibold">Email Correspondence</div>
+                  <a href="mailto:info@abcbillingllc.com" class="text-base font-bold text-navy-900 hover:text-teal-600 transition">info@abcbillingllc.com</a>
+                  <p class="text-xs text-slate-400">Guaranteed response within 2 hours</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-teal-600 shrink-0">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-500 font-semibold">Security & Confidentiality</div>
+                  <div class="text-sm font-semibold text-slate-700">100% HIPAA & HITECH Compliant</div>
+                  <p class="text-xs text-slate-400">Strict BAAs & SOC-certified infrastructure</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact / Booking Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-xl">
+              <h3 class="text-xl font-bold text-navy-900 mb-1">Request a Practice Audit or Book an Appointment</h3>
+              <p class="text-xs text-slate-500 mb-6">Complete this quick form and an RCM director will follow up promptly.</p>
+
+              <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name *</label>
+                    <input type="text" required placeholder="Dr. John Doe" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Practice / Clinic Name *</label>
+                    <input type="text" required placeholder="Coastal Health Clinic" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Work Email *</label>
+                    <input type="email" required placeholder="doctor@clinic.com" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Direct Phone *</label>
+                    <input type="tel" required placeholder="(409) 000-0000" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Clinical Specialty</label>
+                    <select class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:teal-500 bg-white">
+                      <option>Internal Medicine</option>
+                      <option>Cardiology</option>
+                      <option>Pain Management</option>
+                      <option>Orthopedics</option>
+                      <option>Ambulatory Surgery Center</option>
+                      <option>Psychiatry / Mental Health</option>
+                      <option>Dermatology</option>
+                      <option>Oncology</option>
+                      <option>Other Specialty</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Primary Interest</label>
+                    <select class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:teal-500 bg-white">
+                      <option>Free Comprehensive Billing Audit</option>
+                      <option>Full Revenue Cycle Management</option>
+                      <option>Denial Prevention & AR Cleanup</option>
+                      <option>Provider Credentialing & Contracting</option>
+                      <option>General Inquiry</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Practice Challenges or EHR System (Optional)</label>
+                  <textarea rows="3" placeholder="Tell us your current EHR (Athena, Epic, etc.) or main billing concern..." class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:teal-500"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-700 hover:to-sky-700 text-white font-bold rounded-xl shadow-lg transition duration-200 text-sm flex items-center justify-center gap-2">
+                  <span>Submit Appointment & Audit Request</span>
+                  <i class="fa-solid fa-paper-plane text-xs"></i>
+                </button>
+                <p class="text-[11px] text-center text-slate-400 mt-2">
+                  <i class="fa-solid fa-lock text-slate-400"></i> Your practice information is held strictly confidential under HIPAA standards.
+                </p>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-navy-950 text-slate-400 text-sm border-t border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-10 h-10 rounded-lg bg-teal-500 flex items-center justify-center text-white font-extrabold text-lg">
+              ABC
+            </div>
+            <div>
+              <span class="font-extrabold text-xl text-white">Accredited Billing &amp; Consulting</span>
+              <p class="text-xs text-slate-400">ABC Billing LLC</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Providing expert medical billing, accurate ICD-10 coding, proactive denial prevention, and professional credentialing for independent practices, surgery centers, and specialty groups.
+          </p>
+          <div class="text-xs text-slate-300 space-y-1">
+            <div><strong class="text-white">Phone:</strong> (409) 340-0192</div>
+            <div><strong class="text-white">Email:</strong> info@abcbillingllc.com</div>
+            <div><strong class="text-white">Domain:</strong> abcbillingllc.com</div>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider">Services</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#services" class="hover:text-teal-400 transition">Medical Billing &amp; Coding</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Denial Management</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Revenue Optimization</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Credentialing &amp; Contracting</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Pre-Authorization</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Practice Performance Reports</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Specialties -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider">Specialties</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#specialties" class="hover:text-teal-400 transition">Cardiology Billing</a></li>
+            <li><a href="#specialties" class="hover:text-teal-400 transition">Pain Management</a></li>
+            <li><a href="#specialties" class="hover:text-teal-400 transition">Ambulatory Surgery Centers</a></li>
+            <li><a href="#specialties" class="hover:text-teal-400 transition">Orthopedics &amp; Spine</a></li>
+            <li><a href="#specialties" class="hover:text-teal-400 transition">Psychiatry &amp; Mental Health</a></li>
+            <li><a href="#specialties" class="hover:text-teal-400 transition">Internal Medicine</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Compliance & Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider">Standards</h4>
+          <ul class="space-y-2 text-xs">
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-teal-400"></i> HIPAA Compliant</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-teal-400"></i> HITECH Security</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-teal-400"></i> AAPC / AHIMA Certified</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-teal-400"></i> NPI &amp; CAQH Profiles</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-teal-400"></i> 100% US Payer Compliant</li>
+          </ul>
+          <div class="pt-2">
+            <button onclick="openModal('Audit Consultation')" class="w-full py-2 bg-slate-800 hover:bg-slate-700 text-teal-300 font-semibold rounded text-xs transition border border-slate-700">
+              Schedule Free Audit
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Disclaimer & Copyright -->
+      <div class="mt-12 pt-8 border-t border-navy-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <div>
+          &copy; <span id="current-year">2026</span> Accredited Billing and Consulting (ABC Billing LLC). All rights reserved.
+        </div>
+        <div class="flex space-x-6">
+          <button onclick="showNotification('Privacy Policy is updated and available upon request for contracted providers.')" class="hover:text-slate-300">Privacy Policy</button>
+          <button onclick="showNotification('Terms of Service are tailored to individual Provider Service Level Agreements.')" class="hover:text-slate-300">Terms of Service</button>
+          <button onclick="showNotification('Business Associate Agreement (BAA) provided prior to any clinical data exchange.')" class="hover:text-slate-300">HIPAA Compliance Notice</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="booking-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/70 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative transform scale-95 transition-transform duration-300 border border-slate-200">
+      
+      <!-- Close Button -->
+      <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 text-lg p-1" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl">
+          <i class="fa-solid fa-calendar-check"></i>
+        </div>
+        <div>
+          <h3 id="modal-title" class="text-lg font-bold text-navy-900">Schedule Consultation</h3>
+          <p class="text-xs text-slate-500">Accredited Billing & Consulting</p>
+        </div>
+      </div>
+
+      <form onsubmit="handleModalSubmit(event)" class="space-y-3.5">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Your Full Name *</label>
+          <input type="text" id="m-name" required placeholder="Dr. Alex Rivera" class="w-full px-3.5 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address *</label>
+            <input type="email" id="m-email" required placeholder="name@clinic.com" class="w-full px-3.5 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Phone Number *</label>
+            <input type="tel" id="m-phone" required placeholder="(409) 340-0192" class="w-full px-3.5 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Medical Specialty</label>
+          <select id="m-specialty" class="w-full px-3.5 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500 bg-white">
+            <option>Family / Internal Medicine</option>
+            <option>Cardiology</option>
+            <option>Pain Management</option>
+            <option>Ambulatory Surgery Center</option>
+            <option>Orthopedics / Spine</option>
+            <option>Psychiatry / Mental Health</option>
+            <option>Oncology / Hematology</option>
+            <option>Other Healthcare Facility</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Preferred Time / Notes</label>
+          <input type="text" id="m-notes" placeholder="e.g. Morning call preferred, current EHR is AthenaHealth" class="w-full px-3.5 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500">
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" class="w-full py-3 bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-700 hover:to-sky-700 text-white font-bold rounded-xl shadow transition text-sm flex items-center justify-center gap-2">
+            <span>Confirm Consultation Request</span>
+            <i class="fa-solid fa-check"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast-notification" class="fixed bottom-5 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none max-w-sm">
+    <div class="bg-navy-900 text-white px-5 py-3.5 rounded-xl shadow-2xl border border-teal-500/30 flex items-center gap-3">
+      <div class="w-8 h-8 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center shrink-0">
+        <i class="fa-solid fa-circle-check text-base"></i>
+      </div>
+      <div id="toast-text" class="text-xs font-medium leading-snug">
+        Your consultation request has been submitted successfully!
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Update dynamic year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    function toggleMenu() {
+      const isClosed = mobileMenu.classList.contains('hidden');
+      if (isClosed) {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-xmark');
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+      }
+    }
+    mobileBtn.addEventListener('click', toggleMenu);
+
+    // FAQ Accordion Toggle
+    function toggleFaq(button) {
+      const answer = button.nextElementSibling;
+      const icon = button.querySelector('i');
+      const isHidden = answer.classList.contains('hidden');
+
+      // Close all answers first
+      document.querySelectorAll('#faq-container > div').forEach(item => {
+        const a = item.querySelector('div:last-child');
+        const ic = item.querySelector('button i');
+        if (a && ic) {
+          a.classList.add('hidden');
+          ic.classList.remove('rotate-180');
+        }
+      });
+
+      if (isHidden) {
+        answer.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      }
+    }
+
+    // Modal Control
+    const modal = document.getElementById('booking-modal');
+    const modalTitle = document.getElementById('modal-title');
+
+    function openModal(titleText) {
+      if (titleText) {
+        modalTitle.textContent = titleText;
+      }
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.firstElementChild.classList.remove('scale-95');
+      modal.firstElementChild.classList.add('scale-100');
+    }
+
+    function closeModal() {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modal.firstElementChild.classList.remove('scale-100');
+      modal.firstElementChild.classList.add('scale-95');
+    }
+
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Toast notification handler without alert()
+    function showNotification(message) {
+      const toast = document.getElementById('toast-notification');
+      const text = document.getElementById('toast-text');
+      text.textContent = message;
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 4500);
+    }
+
+    // Interactive ROI Calculator Logic
+    const volumeSlider = document.getElementById('volume-slider');
+    const denialSlider = document.getElementById('denial-slider');
+    const practiceSelect = document.getElementById('practice-type');
+    const volumeDisplay = document.getElementById('volume-display');
+    const denialDisplay = document.getElementById('denial-display');
+    const annualRecovery = document.getElementById('annual-recovery');
+
+    function calculateROI() {
+      const volume = parseFloat(volumeSlider.value);
+      const denialPct = parseFloat(denialSlider.value);
+
+      volumeDisplay.textContent = '$' + volume.toLocaleString();
+      denialDisplay.textContent = denialPct + '%';
+
+      // Calculation: Denial recovery + 5% undercoding uplift
+      const monthlyDeniedLoss = volume * (denialPct / 100);
+      // Our team reclaims ~80% of preventable denials + 4% baseline coding yield improvements
+      const reclaimedFromDenials = monthlyDeniedLoss * 0.76;
+      const codingYield = volume * 0.035;
+      const monthlyTotalGain = reclaimedFromDenials + codingYield;
+      const annualTotalGain = Math.round(monthlyTotalGain * 12);
+
+      annualRecovery.textContent = '+$' + annualTotalGain.toLocaleString() + ' / yr';
+    }
+
+    volumeSlider.addEventListener('input', calculateROI);
+    denialSlider.addEventListener('input', calculateROI);
+    practiceSelect.addEventListener('change', calculateROI);
+    calculateROI();
+
+    // Specialty modal helper
+    function openSpecialtyInfo(specialtyName, details) {
+      openModal(specialtyName + ' Billing Assessment');
+      document.getElementById('m-notes').value = details;
+    }
+
+    // Contact Form Handler
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      showNotification('Thank you! Your billing consultation request has been received. Our team will contact you within 2 business hours.');
+      e.target.reset();
+    }
+
+    // Modal Form Handler
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      closeModal();
+      showNotification('Appointment successfully booked! A confirmation email and calendar invite have been dispatched.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
